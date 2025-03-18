@@ -1,6 +1,10 @@
 > [!WARNING]  
 > `create-react-app` is totally lame!  Make sure to switch to a Vite template as soon as possible!
 
+> [!NOTE]  
+> Use [Chakra UI](https://chakra-ui.com/) for the ui - it will save space, and make components easier to make.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
