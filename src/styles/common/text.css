@@ -1,0 +1,38 @@
+:root {
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  transition-duration: var(--transition-speed);
+  transition-property: color;
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+}
+
+a:active {
+  color: var(--primary-color-active);
+}
+
+abbr {
+  text-decoration: underline dotted var(--primary-color) 0.15em;
+}
+
+samp {
+  border-radius: 0.25em;
+  padding: 0.2em 0.5em;
+  background-color: var(--code-sample-color);
+}
+
+samp,
+pre,
+code {
+  font-family: var(--code-font);
+}
+
+mark {
+  background-color: var(--hightlight-color);
+}

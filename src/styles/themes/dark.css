@@ -1,0 +1,20 @@
+html[theme="dark"] {
+  --background-color: #111111;
+  --input-background-color: #111111;
+  --text-color: #cccccc;
+  --transition-speed: 150ms;
+  --primary-color: #008ccd;
+  --primary-color-hover: #0079b0;
+  --primary-color-active: #006a9b;
+  --border-color: #414141;
+  --main-font: "Poppins", serif;
+  --code-font: "Consolas", monospace;
+  --input-radius: 1.75em;
+  --input-padding: 0.5em 1em;
+  --hightlight-color: #7b5a00;
+  --code-sample-color: #444444;
+
+  --arrow-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23999999' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m7 10l5 5m0 0l5-5'/%3E%3C/svg%3E");
+  --x-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20px' viewBox='0 -960 960 960' width='20px' fill='%23999999'%3E%3Cpath d='M480-414 282-216q-14 14-33 14t-33-14q-14-14-14-33t14-33l198-198-198-198q-14-14-14-33t14-33q14-14 33-14t33 14l198 198 198-198q14-14 33-14t33 14q14 14 14 33t-14 33L546-480l198 198q14 14 14 33t-14 33q-14 14-33 14t-33-14L480-414Z'/%3E%3C/svg%3E");
+  --spinner-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'1em'%20height%3D'1em'%20viewBox%3D'0%200%2024%2024'%3E%3Cg%20stroke%3D'%230089cd'%3E%3Ccircle%20cx%3D'12'%20cy%3D'12'%20r%3D'9.5'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-width%3D'3'%3E%3Canimate%20attributeName%3D'stroke-dasharray'%20calcMode%3D'spline'%20dur%3D'1.5s'%20keySplines%3D'0.42%2C0%2C0.58%2C1%3B0.42%2C0%2C0.58%2C1%3B0.42%2C0%2C0.58%2C1'%20keyTimes%3D'0%3B0.475%3B0.95%3B1'%20repeatCount%3D'indefinite'%20values%3D'0%20150%3B42%20150%3B42%20150%3B42%20150'%2F%3E%3Canimate%20attributeName%3D'stroke-dashoffset'%20calcMode%3D'spline'%20dur%3D'1.5s'%20keySplines%3D'0.42%2C0%2C0.58%2C1%3B0.42%2C0%2C0.58%2C1%3B0.42%2C0%2C0.58%2C1'%20keyTimes%3D'0%3B0.475%3B0.95%3B1'%20repeatCount%3D'indefinite'%20values%3D'0%3B-16%3B-59%3B-59'%2F%3E%3C%2Fcircle%3E%3CanimateTransform%20attributeName%3D'transform'%20dur%3D'2s'%20repeatCount%3D'indefinite'%20type%3D'rotate'%20values%3D'0%2012%2012%3B360%2012%2012'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}

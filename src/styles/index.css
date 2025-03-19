@@ -1,0 +1,47 @@
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Material icons */
+@import url('https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css');
+
+/* Themes */
+@import "./themes/light.css";
+@import "./themes/dark.css";
+
+/* Component styles */
+@import './body-column.css';
+@import "./common/text.css";
+@import "./common/hr.css";
+@import "./common/lists.css";
+@import "./common/tables.css";
+@import "./common/inputs/index.css";
+
+/* Utility css */
+@import "./util/flex.css";
+@import "./util/size.css";
+@import "./util/misc.css";
+
+* {
+  user-select: none;
+  accent-color: var(--primary-color);
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0px;
+}
+
+.material-icons-round {
+  font-size: 1.5em;
+}
+
+.spinner {
+  font-size: 48px;
+  width: 1em;
+  height: 1em;
+  background-image: var(--spinner-icon);
+  background-size: 1em 1em;
+}
