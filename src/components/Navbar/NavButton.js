@@ -1,9 +1,11 @@
 /**
  * Valid icon styles are: outlined, round, sharp, two-tone.  The default style is filled
  */
-function NavButton({ iconStyle, icon, children, ...props }) {
+function NavButton({ iconStyle, icon, children, hideOnMobile, className, ...props }) {
+  const classes = (className || '') + (hideOnMobile ? ' hidden-mobile' : '');
+
   return (
-    <button {...props}>
+    <button className={classes} {...props}>
       {icon && <span className={iconStyle ? `material-icons-${iconStyle}` : `material-icons`}>{icon}</span>}
       {children}
     </button>

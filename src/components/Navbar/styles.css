@@ -34,7 +34,7 @@ nav button {
   width: 1em;
   height: 1em;
   border: none;
-  color: #a8a8a8;
+  color: #818181;
   background-color: #00000000;
   cursor: pointer;
   transition-duration: 150ms;
@@ -53,5 +53,9 @@ nav button:hover {
   nav {
     flex-direction: row;
     justify-content: center;
+  }
+
+  nav button.hidden-mobile {
+    display: none;
   }
 }

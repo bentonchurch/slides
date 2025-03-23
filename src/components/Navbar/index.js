@@ -18,9 +18,12 @@ function Navbar() {
     <nav>
       <div className="nav-left">
         <NavButton icon="arrow_back_ios_new" iconStyle="round" />
+        <NavButton icon="save" iconStyle="round" />
+        <NavButton icon="undo" iconStyle="round" />
+        <NavButton icon="redo" iconStyle="round" />
       </div>
       <div className="nav-right">
-        <NavButton icon="info" iconStyle="outlined" />
+        <NavButton icon="help_outline" iconStyle="round" hideOnMobile />
         <GithubNavButton />
         <NavButton icon="settings" iconStyle="round" />
         <NavButton icon="account_circle" iconStyle="round" />
