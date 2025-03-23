@@ -1,0 +1,16 @@
+.icon-button {
+  --input-padding: 0.5em 0.5em;
+  box-sizing: content-box;
+  min-width: 1.5em;
+  min-height: 1.5em;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  color: red;
+  gap: 0.25em;
+}

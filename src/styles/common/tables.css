@@ -1,0 +1,65 @@
+.use-default table {
+  border-spacing: 0px;
+}
+
+.use-default table td {
+  border: 1px solid var(--border-color);
+}
+
+.use-default table td,
+.use-default table th {
+  padding: 0.1em 0.5em;
+}
+
+.use-default table td + td {
+  border-left: none;
+}
+
+.use-default table tr + tr td {
+  border-top: none;
+}
+
+.use-default table [scope],
+.use-default table th,
+.use-default table thead th,
+.use-default table thead td,
+.use-default table tfoot th,
+.use-default table tfoot td {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: normal;
+}
+
+.use-default table thead tr:first-of-type th:first-child,
+.use-default table thead tr:first-of-type td:first-child,
+.use-default table:not(:has(thead)) tbody tr:first-of-type th:first-child,
+.use-default table:not(:has(thead)) tbody tr:first-of-type td:first-child {
+  border-top-left-radius: 0.5em;
+}
+
+.use-default table thead tr:first-of-type th:last-child,
+.use-default table thead tr:first-of-type td:last-child,
+.use-default table:not(:has(thead)) tbody tr:first-of-type th:last-child,
+.use-default table:not(:has(thead)) tbody tr:first-of-type td:last-child {
+  border-top-right-radius: 0.5em;
+}
+
+.use-default table tfoot tr:last-of-type th:first-child,
+.use-default table tfoot tr:last-of-type td:first-child,
+.use-default table:not(:has(tfoot)) tbody tr:last-of-type th:first-child,
+.use-default table:not(:has(tfoot)) tbody tr:last-of-type td:first-child {
+  border-bottom-left-radius: 0.5em;
+}
+
+
+.use-default table tfoot tr:last-of-type th:last-child,
+.use-default table tfoot tr:last-of-type td:last-child,
+.use-default table:not(:has(tfoot)) tbody tr:last-of-type th:last-child,
+.use-default table:not(:has(tfoot)) tbody tr:last-of-type td:last-child {
+  border-bottom-right-radius: 0.5em;
+}
+
+.use-default table tr:nth-child(even) {
+  /* background-color: #dadada; */
+}

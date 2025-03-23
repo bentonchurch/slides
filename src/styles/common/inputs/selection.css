@@ -1,0 +1,18 @@
+.use-default input[type="checkbox"],
+.use-default input[type="radio"] {
+  appearance: none;
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  margin: 0px;
+}
+
+.use-default input[type="checkbox"] {
+  border: 1px solid var(--border-color);
+  border-radius: 0.25em;
+}
+
+.use-default input[type="checkbox"]:checked,
+.use-default input[type="checkbox"]:indeterminate {
+  background-color: var(--primary-color);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+<head>
+  <!-- Meta data -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Title -->
+  <title>Home | Benton Youth Lyrics</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/core.css" />
+  <link rel="stylesheet" href="./css/spinner.css" />
+  <link rel="stylesheet" href="./css/components/toast.css" />
+  <link rel="stylesheet" href="./css/components/tab-table.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css">
+
+  <!-- Scripts -->
+</head>
+
+<body>
+  <h1>Home</h1>
+
+  <span class="toast warning">
+    <span class="material-icons-outlined"></span>
+    <span>Warning - this version is still in beta!  Please use the <a href="./old-version/">old version</a> as we continue to get this version ready for production.</span>
+  </span>
+
+  <script type="module">
+    import { TabTable } from './js/modules/tab/index.js';
+    const table = new TabTable();
+    document.body.append(table.container);
+  </script>
+</body>
+
+</html>

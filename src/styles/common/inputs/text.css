@@ -1,0 +1,61 @@
+.use-default :is(
+  input:not([type]),
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"]
+) {
+  background-color: var(--input-background-color);
+  color: var(--text-color);
+  border: none;
+  outline: var(--border-color) solid 1px;
+}
+
+.use-default :is(
+  input:not([type]):focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="text"]:focus,
+  input[type="url"]:focus
+) {
+  outline: var(--primary-color) solid 2px;
+}
+
+.use-default textarea {
+  font-size: 1em;
+  border: none;
+  outline: var(--border-color) solid 1px;
+  border-radius: 0.6em 0.6em 4px 0.6em;
+  padding: 0.5em;
+  background-color: var(--input-background-color);
+}
+
+.use-default textarea:focus {
+  outline: var(--primary-color) solid 2px;
+}
+
+.use-default input[type="search"]:not(:placeholder-shown)::-webkit-search-cancel-button {
+  opacity: 1;
+  position: relative;
+  right: -0.25em;
+  appearance: none;
+  height: 1.25em;
+  width: 1.25em;
+  background-size: 1.25em 1.25em;
+  background-image: var(--x-icon);
+  cursor: pointer;
+}
+
+.use-default input[type="password"] {
+  letter-spacing: 0.15em;
+}
+
+.use-default input[type="password"]::placeholder {
+  letter-spacing: normal;
+}
