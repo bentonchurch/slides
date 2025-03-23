@@ -1,19 +1,8 @@
 import { NavButton } from './NavButton.js';
 import { GithubNavButton } from './GithubButton.js';
-import { useImperativeHandle, useState } from 'react';
 import './styles.css';
 
 function Navbar() {
-  const [leftButtons, setLeftButtons] = useState([]);
-  const [rightButtons, setRightButtons] = useState([]);
-
-  // useImperativeHandle(ref, () => {
-  //   return {
-  //     setLeftButtons,
-  //     setRightButtons
-  //   };
-  // }, []);
-  
   return (
     <nav>
       <div className="nav-left">
