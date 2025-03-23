@@ -1,18 +1,22 @@
-input[type="date"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="time"],
-input[type="week"] {
+.use-default :is(
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"]
+) {
   background-color: var(--input-background-color);
   color: var(--text-color);
   border: none;
   outline: var(--border-color) solid 1px;
 }
 
-input[type="date"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus {
+.use-default :is(
+  input[type="date"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus
+) {
   outline: var(--primary-color) solid 2px;
 }

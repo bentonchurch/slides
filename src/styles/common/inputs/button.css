@@ -1,8 +1,10 @@
-button,
-input[type="button"],
-input[type="submit"],
-input[type="file"]::file-selector-button,
-input[type="reset"] {
+.use-default :is(
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="file"]::file-selector-button,
+  input[type="reset"]
+) {
   background: var(--primary-color);
   transition-duration: var(--transition-speed);
   transition-property: background;
@@ -11,31 +13,37 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="file"]::file-selector-button:hover,
-input[type="reset"]:hover {
+.use-default :is(
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  input[type="file"]::file-selector-button:hover,
+  input[type="reset"]:hover
+) {
   background: var(--primary-color-hover);
 }
 
-button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="file"]::file-selector-button:active,
-input[type="reset"]:active {
+.use-default :is(
+  button:active,
+  input[type="button"]:active,
+  input[type="submit"]:active,
+  input[type="file"]::file-selector-button:active,
+  input[type="reset"]:active
+) {
   background: var(--primary-color-active);
 }
 
-input[type="file"] {
+.use-default input[type="file"] {
   font-size: 1em;
 }
 
-button:focus-visible,
-input[type="button"]:focus-visible,
-input[type="submit"]:focus-visible,
-input[type="file"]::file-selector-button:focus-visible,
-input[type="reset"]:focus-visible {
+.use-default :is(
+  button:focus-visible,
+  input[type="button"]:focus-visible,
+  input[type="submit"]:focus-visible,
+  input[type="file"]::file-selector-button:focus-visible,
+  input[type="reset"]:focus-visible
+) {
   margin: 2px;
   border: 2px solid var(--background-color);
   outline: var(--primary-color) solid 2px;

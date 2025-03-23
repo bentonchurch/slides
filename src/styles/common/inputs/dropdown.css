@@ -1,4 +1,4 @@
-select {
+.use-default select {
   font-size: 1em;
   border: none;
   outline: var(--border-color) solid 1px;
@@ -12,6 +12,6 @@ select {
   background-image: var(--arrow-icon);
 }
 
-select:focus {
+.use-default select:focus {
   outline: var(--primary-color) solid 2px;
 }

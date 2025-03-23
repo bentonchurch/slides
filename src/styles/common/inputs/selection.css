@@ -1,5 +1,5 @@
-input[type="checkbox"],
-input[type="radio"] {
+.use-default input[type="checkbox"],
+.use-default input[type="radio"] {
   appearance: none;
   font-size: 1em;
   width: 1em;
@@ -7,12 +7,12 @@ input[type="radio"] {
   margin: 0px;
 }
 
-input[type="checkbox"] {
+.use-default input[type="checkbox"] {
   border: 1px solid var(--border-color);
   border-radius: 0.25em;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:indeterminate {
+.use-default input[type="checkbox"]:checked,
+.use-default input[type="checkbox"]:indeterminate {
   background-color: var(--primary-color);
 }
