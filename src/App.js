@@ -1,8 +1,10 @@
+import { Layout } from "./components/layout/index.js";
+
 function App() {
   return (
-    <p>
-      Edit <code>src/App.js</code> and save to reload.
-    </p>
+    <Layout>
+      <h1>Test</h1>
+    </Layout>
   );
 }
 
