@@ -40,19 +40,6 @@ function Sidebar({ mobile, width }) {
       inlineCollapsed={!mobile && collapsed}
     />;console.log(collapsed);
 
-  const drawer = 
-    <Drawer
-      placement={'left'}
-      closable={false}
-      onClose={() => setCollapsed(true)}
-      style={{ padding: 0 }}
-      styles={{ body: {padding: 0}}}
-      open={!collapsed}
-      width={width}
-    >
-      {menu}
-    </Drawer>;
-
   return (
     mobile ? (
       <Drawer
