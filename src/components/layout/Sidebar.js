@@ -22,7 +22,7 @@ const items = [
 
 
 function Sidebar({ mobile, width }) {
-  const [ collapsed, setCollapsed ] = useState(false);
+  const [ collapsed, setCollapsed ] = useState(true);
   
   const onClick = (e) => {
     console.log('click ', e);
