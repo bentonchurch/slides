@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Sidebar } from './Sidebar.js';
-import { Layout, ConfigProvider } from 'antd';
+import { Layout, ConfigProvider, Space } from 'antd';
 import { theme } from '../../theme.js';
 import "./styles.css";
 
@@ -14,11 +14,13 @@ function App({ children }) {
       <Layout className="main-layout">
         <Sidebar mobile={isMobile} width={320} />
         <Layout>
-          <Layout.Header>
+          <Layout.Header style={{ backgroundColor: "white"}}>
             Test
           </Layout.Header>
           <Layout.Content>
-            {children}
+            <Space direction='vertical' align='center' style={{ width: "100%" }}>
+              <div>{children}</div>
+            </Space>
           </Layout.Content>
         </Layout>
       </Layout>
