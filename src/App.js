@@ -1,6 +1,6 @@
 import { Layout } from "./components/layout/index.js";
 import Markdown from "react-markdown";
-import { Divider, Space } from "antd";
+import { Avatar, Divider, Space } from "antd";
 import { AlbumCard } from "./components/albumCard/index.js";
 
 const markdown = `
@@ -14,28 +14,32 @@ function App() {
       <h1>Recent</h1>
       <Space size="middle">
         <AlbumCard
-          title="Album 1"
-          subtitle="Edited April 14, 2025"
+          title="Here's a really long title"
+          subtitle="September 14, 2025"
           imageSrc="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
           imageAlt="Arctic Fox"
+          avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=0" />}
         />
         <AlbumCard
           title="Album 2"
-          subtitle="Edited April 14, 2025"
+          subtitle="April 14, 2025"
           imageSrc="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
           imageAlt="Arctic Fox"
+          avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=8" />}
         />
         <AlbumCard
           title="Album 3"
-          subtitle="Edited April 14, 2025"
+          subtitle="April 14, 2025"
           imageSrc="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
           imageAlt="Arctic Fox"
+          avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=6" />}
         />
         <AlbumCard
           title="Album 4"
-          subtitle="Edited April 14, 2025"
+          subtitle="April 14, 2025"
           imageSrc="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
           imageAlt="Arctic Fox"
+          avatar={<Avatar src="https://api.dicebear.com/7.x/miniavs/svg?seed=9" />}
         />
       </Space>
       <Divider />
