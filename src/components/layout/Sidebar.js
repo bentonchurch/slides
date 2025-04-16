@@ -1,6 +1,7 @@
 import { AppstoreOutlined, SettingOutlined, HomeOutlined, InfoCircleOutlined, ReadOutlined } from '@ant-design/icons';
 import { Menu, Drawer, Layout } from 'antd';
 import { useState } from 'react';
+import { theme } from '../../theme.js';
 
 const items = [
   { key: 'home', icon: <HomeOutlined />, label: 'Home' },
@@ -35,7 +36,7 @@ function Sidebar({ mobile, width }) {
       defaultOpenKeys={['sub1']}
       style={{ width: '100%', height: '100%' }}
       mode="inline"
-      theme="light"
+      theme={theme.componentTheme}
       items={items}
       inlineCollapsed={!mobile && collapsed}
     />;console.log(collapsed);
@@ -55,7 +56,7 @@ function Sidebar({ mobile, width }) {
       </Drawer>
     ) : (
       <Layout.Sider
-        theme="light"
+        theme={theme.componentTheme}
         width={width}
         collapsed={collapsed}
         collapsible={true}

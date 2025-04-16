@@ -1,7 +1,11 @@
-const theme = {
+import { theme } from "antd";
+
+const customTheme = {
+  algorithm: theme.lightAlgorithm,
+  componentTheme: 'light',
   token: {
     borderRadius: 6,
   }
 };
 
-export { theme };
+export { customTheme as theme };
