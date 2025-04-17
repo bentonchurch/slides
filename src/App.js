@@ -44,7 +44,7 @@ function App() {
         />
       </Space>
       <Divider />
-      <h1>Popular users</h1>
+      <h1>Pinned Users</h1>
       <Space size="middle" direction="horizontal" style={{ width: '100%', justifyContent: "center" }}>
         <ProfileAvatar size={128} name="Ella Emerson" username="ellaemerson123" image="https://api.dicebear.com/7.x/miniavs/svg?seed=0" />
         <ProfileAvatar size={128} name="Jimothy Cancer" username="itsyourmom" image="https://api.dicebear.com/7.x/miniavs/svg?seed=8" />
